@@ -1,0 +1,19 @@
+#appId
+appId: rocketmqproducer
+server:
+  port: 8021
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: rocketmqproducer
+###producer
+# 配置rocketmq
+rocketmq:
+  # name-server: 47.101.135.160:9876;xxx
+  name-server: 127.0.0.1:9876
+  producer:
+    group: my-group #生产者
+  consumer:
+    group: my-group  #消费者
